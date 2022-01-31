@@ -24,15 +24,11 @@
   }
 
   &__data {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-column-center;
   }
 
   &__data-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-column-center;
   }
 
   &__firstnamelabel,
