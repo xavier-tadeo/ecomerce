@@ -1,0 +1,10 @@
+@import "/src/styles/extends";
+@import "/src//styles/variables";
+
+.form {
+  @extend %flex-column-center;
+  height: 800px;
+  &__title {
+    color: $pink;
+  }
+}
