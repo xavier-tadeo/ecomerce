@@ -17,15 +17,52 @@
     @extend %flex-column-center;
   }
 
+  &__data-container {
+    display: flex;
+    width: 670px;
+    justify-content: space-between;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__data-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__firstnamelabel,
   &__lastnamelabel,
-  &__userlabel {
+  &__userlabel,
+  &__emaillabel,
+  &__datelabel,
+  &__agelabel,
+  &__avatarlabel,
+  &__directionlabel {
     @extend %form-label;
   }
 
   &__firstnameinput,
   &__lastnameinput,
-  &__userinput {
+  &__userinput,
+  &__emailinput,
+  &__dateinput,
+  &__ageinput,
+  &__avatarinput,
+  &__directioninput {
     @extend %form-input;
+  }
+
+  &__container-button {
+    margin-top: 50px;
+  }
+
+  &__button {
+    height: 45px;
+    width: 150px;
   }
 }
