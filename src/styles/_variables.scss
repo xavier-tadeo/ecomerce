@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+
 /* COLORS */
 $green: #74d3ae;
 $gray: #393e41;
 $pink: #d2bed9;
 
 /* FONT */
-$font: "Roboto Mono", Courier, Arial, monospace;
+$fontTitle: "Roboto Mono", Courier, Arial, monospace;
+$sizeTitle: 35px;
+$fontSubTitle: "Cousine", Courier, Arial, monospace;
+$fontLabel: "Poppins", Courier, Arial, monospace;

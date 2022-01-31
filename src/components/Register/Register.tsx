@@ -5,6 +5,7 @@ export const Register = () => {
     <div className="form">
       <h2 className="form__title">SmartShopping</h2>
       <form className="form__container">
+        <h4 className="form__register">Register</h4>
         <label htmlFor="firstname" className="form__firstnamelabel">
           Firts Name
         </label>
