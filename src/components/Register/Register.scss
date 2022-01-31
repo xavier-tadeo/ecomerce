@@ -1,0 +1,31 @@
+@import "/src/styles/extends";
+@import "/src//styles/variables";
+
+.form {
+  @extend %flex-column-center;
+  height: 800px;
+
+  &__title {
+    @extend %title;
+  }
+
+  &__register {
+    @extend %form-sub-title;
+  }
+
+  &__container {
+    @extend %flex-column-center;
+  }
+
+  &__firstnamelabel,
+  &__lastnamelabel,
+  &__userlabel {
+    @extend %form-label;
+  }
+
+  &__firstnameinput,
+  &__lastnameinput,
+  &__userinput {
+    @extend %form-input;
+  }
+}
