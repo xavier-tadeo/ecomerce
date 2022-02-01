@@ -53,6 +53,45 @@
     @extend %form-input;
   }
 
+  &__firstnameinput:focus,
+  &__lastnameinput:focus,
+  &__userinput:focus,
+  &__emailinput:focus,
+  &__dateinput:focus,
+  &__ageinput:focus,
+  &__avatarinput:focus,
+  &__directioninput:focus {
+    background-color: lightblue;
+  }
+
+  input:focus-visible {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid red;
+  }
+
+  &__dateinput::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+  &__dateinput::before {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+
+  &__avatarinput::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+  &__avatarinput::before {
+    content: "Select a image";
+
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+
   &__container-button {
     margin-top: 50px;
   }
@@ -60,5 +99,15 @@
   &__button {
     height: 45px;
     width: 150px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-family: $fontSubTitle;
+    background-color: $green;
+    text-transform: uppercase;
+  }
+
+  &__button:hover {
+    cursor: pointer;
+    background-color: #d2bed9;
   }
 }

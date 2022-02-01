@@ -4,7 +4,7 @@ export const Register = () => {
   return (
     <div className="form">
       <h2 className="form__title">SmartShopping</h2>
-      <form className="form__container">
+      <form className="form__container" autoComplete="off">
         <h4 className="form__register">Register</h4>
         <div className="form__data-container">
           <div className="form__data">
