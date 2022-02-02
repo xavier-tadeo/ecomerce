@@ -1,7 +1,7 @@
 import { ChangeEvent, useState } from "react";
 
 export const useForm = () => {
-  const initialValue = {
+  const registerValue = {
     firstName: "",
     lastName: "",
     userName: "",
@@ -12,11 +12,11 @@ export const useForm = () => {
     yourDirection: "",
   };
 
-  const [data, setData] = useState(initialValue);
+  const [dataRegister, setDataRegister] = useState(registerValue);
 
   const onChange = (evt: ChangeEvent<HTMLInputElement>) => {
-    setData({
-      ...data,
+    setDataRegister({
+      ...dataRegister,
       [evt.target.id]:
         evt.target.type === "file" ? evt.target.files : evt.target.value,
     });
@@ -26,7 +26,7 @@ export const useForm = () => {
     evt.preventDefault();
   };
   return {
-    data,
+    dataRegister,
     onChange,
     onSubmit,
   };
