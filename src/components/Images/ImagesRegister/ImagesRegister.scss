@@ -1,0 +1,12 @@
+@import "/src/styles/extends";
+@import "/src//styles/variables";
+
+.images {
+  @extend %flex-column-center;
+  justify-content: space-evenly;
+
+  &__silla {
+    height: 180px;
+    width: 180px;
+  }
+}

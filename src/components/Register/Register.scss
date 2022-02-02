@@ -20,7 +20,8 @@
   &__data-container {
     display: flex;
     width: 670px;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   &__data {
@@ -38,8 +39,13 @@
   &__datelabel,
   &__agelabel,
   &__avatarlabel,
-  &__directionlabel {
+  &__directionlabel,
+  &__passwordlabel {
     @extend %form-label;
+  }
+
+  &__passwordlabel {
+    margin-top: 20px;
   }
 
   &__firstnameinput,
@@ -49,20 +55,21 @@
   &__dateinput,
   &__ageinput,
   &__avatarinput,
-  &__directioninput {
+  &__directioninput,
+  &__passwordinput {
     @extend %form-input;
   }
 
-  &__firstnameinput:focus,
-  &__lastnameinput:focus,
-  &__userinput:focus,
-  &__emailinput:focus,
-  &__dateinput:focus,
-  &__ageinput:focus,
-  &__avatarinput:focus,
-  &__directioninput:focus {
-    background-color: lightblue;
-  }
+  // &__firstnameinput:focus,
+  // &__lastnameinput:focus,
+  // &__userinput:focus,
+  // &__emailinput:focus,
+  // &__dateinput:focus,
+  // &__ageinput:focus,
+  // &__avatarinput:focus,
+  // &__directioninput:focus {
+  //   background-color: $green;
+  // }
 
   input:focus-visible {
     outline: none;
