@@ -10,6 +10,7 @@ export const useForm = () => {
     age: "",
     avatar: "",
     yourDirection: "",
+    password: "",
   };
 
   const [dataRegister, setDataRegister] = useState(registerValue);
