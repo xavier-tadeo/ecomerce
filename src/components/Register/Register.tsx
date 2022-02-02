@@ -2,7 +2,7 @@ import { useForm } from "../../hooks/useForm";
 import "./Register.scss";
 
 export const Register = () => {
-  const { data, onChange, onSubmit } = useForm();
+  const { dataRegister, onChange, onSubmit } = useForm();
 
   const {
     firstName,
@@ -12,7 +12,7 @@ export const Register = () => {
     yourBirthday,
     age,
     yourDirection,
-  } = data;
+  } = dataRegister;
 
   return (
     <div className="form">
