@@ -17,7 +17,9 @@ export const Register = () => {
 
   return (
     <div className="form">
-      <h2 className="form__title">SmartShopping</h2>
+      <div className="form__title-container">
+        <h2 className="form__title">SmartShopping</h2>
+      </div>
       <form className="form__container" autoComplete="off" onSubmit={onSubmit}>
         <h4 className="form__register">Register</h4>
         <div className="form__data-container">

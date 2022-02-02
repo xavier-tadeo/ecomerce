@@ -1,4 +1,3 @@
-import { Register } from "./components/Register/Register";
 import { PageRegister } from "./Pages/PageRegister/PageRegister";
 
 function App() {

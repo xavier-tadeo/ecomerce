@@ -4,9 +4,12 @@
 .images {
   @extend %flex-column-center;
   justify-content: space-evenly;
+  border-right: 2px solid $pink;
+  height: 650px;
+  margin-top: 40px;
 
   &__silla {
-    height: 180px;
-    width: 180px;
+    height: 200px;
+    width: 300px;
   }
 }
