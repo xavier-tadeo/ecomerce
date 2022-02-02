@@ -12,6 +12,7 @@ export const Register = () => {
     yourBirthday,
     age,
     yourDirection,
+    password,
   } = dataRegister;
 
   return (
@@ -21,7 +22,7 @@ export const Register = () => {
         <h4 className="form__register">Register</h4>
         <div className="form__data-container">
           <div className="form__data">
-            <label htmlFor="firstname" className="form__firstnamelabel">
+            <label htmlFor="firstName" className="form__firstnamelabel">
               Firts Name
             </label>
             <input
@@ -32,7 +33,7 @@ export const Register = () => {
               value={firstName}
               onChange={onChange}
             />
-            <label htmlFor="lastname" className="form__lastnamelabel">
+            <label htmlFor="lastName" className="form__lastnamelabel">
               Last Name
             </label>
             <input
@@ -43,17 +44,7 @@ export const Register = () => {
               value={lastName}
               onChange={onChange}
             />
-            <label htmlFor="user" className="form__userlabel">
-              User Name
-            </label>
-            <input
-              type="text"
-              id="userName"
-              className="form__userinput"
-              placeholder="Your user name"
-              value={userName}
-              onChange={onChange}
-            />
+
             <label htmlFor="email" className="form__emaillabel">
               Email
             </label>
@@ -65,9 +56,7 @@ export const Register = () => {
               value={email}
               onChange={onChange}
             />
-          </div>
-          <div className="form__data-info">
-            <label htmlFor="date" className="form__datelabel">
+            <label htmlFor="yourBirthday" className="form__datelabel">
               Your birthday
             </label>
             <input
@@ -76,6 +65,20 @@ export const Register = () => {
               id="yourBirthday"
               placeholder="Your birthday"
               value={yourBirthday}
+              onChange={onChange}
+            />
+          </div>
+
+          <div className="form__data-info">
+            <label htmlFor="userName" className="form__userlabel">
+              User Name
+            </label>
+            <input
+              type="text"
+              id="userName"
+              className="form__userinput"
+              placeholder="Your user name"
+              value={userName}
               onChange={onChange}
             />
             <label htmlFor="age" className="form__agelabel">
@@ -91,16 +94,7 @@ export const Register = () => {
               value={age}
               onChange={onChange}
             />
-            <label htmlFor="avatar" className="form__avatarlabel">
-              Avatar
-            </label>
-            <input
-              type="file"
-              className="form__avatarinput"
-              id="avatar"
-              onChange={onChange}
-            />
-            <label htmlFor="direction" className="form__directionlabel">
+            <label htmlFor="yourDirection" className="form__directionlabel">
               Your direction
             </label>
             <input
@@ -111,8 +105,28 @@ export const Register = () => {
               value={yourDirection}
               onChange={onChange}
             />
+            <label htmlFor="avatar" className="form__avatarlabel">
+              Avatar
+            </label>
+            <input
+              type="file"
+              className="form__avatarinput"
+              id="avatar"
+              onChange={onChange}
+            />
           </div>
         </div>
+        <label htmlFor="password" className="form__passwordlabel">
+          Your password
+        </label>
+        <input
+          type="password"
+          className="form__passwordinput"
+          id="password"
+          placeholder="**********"
+          value={password}
+          onChange={onChange}
+        />
         <div className="form__container-button">
           <button className="form__button">Create User</button>
         </div>
