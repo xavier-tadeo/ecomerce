@@ -1,9 +1,9 @@
-import { PageRegister } from "./Pages/PageRegister/PageRegister";
+import { PagesLogin } from "./Pages/PageLogin/PageLogin";
 
 function App() {
   return (
     <div className="App">
-      <PageRegister />
+      <PagesLogin />
     </div>
   );
 }
