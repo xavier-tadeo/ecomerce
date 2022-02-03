@@ -1,8 +1,9 @@
-import { useForm } from "../../hooks/useForm";
+import { useFormRegister } from "../../hooks/useFormRegister";
 import "./Register.scss";
 
 export const Register = () => {
-  const { dataRegister, onChange, onSubmit } = useForm();
+  const { dataRegister, onChangeRegister, onSubmitRegister } =
+    useFormRegister();
 
   const {
     firstName,
@@ -20,7 +21,11 @@ export const Register = () => {
       <div className="form__title-container">
         <h2 className="form__title">SmartShopping</h2>
       </div>
-      <form className="form__container" autoComplete="off" onSubmit={onSubmit}>
+      <form
+        className="form__container"
+        autoComplete="off"
+        onSubmit={onSubmitRegister}
+      >
         <h4 className="form__register">Register</h4>
         <div className="form__data-container">
           <div className="form__data">
@@ -33,7 +38,7 @@ export const Register = () => {
               placeholder="Your first name"
               className="form__firstnameinput"
               value={firstName}
-              onChange={onChange}
+              onChange={onChangeRegister}
             />
             <label htmlFor="lastName" className="form__lastnamelabel">
               Last Name
@@ -44,7 +49,7 @@ export const Register = () => {
               className="form__lastnameinput"
               placeholder="Your last name"
               value={lastName}
-              onChange={onChange}
+              onChange={onChangeRegister}
             />
 
             <label htmlFor="email" className="form__emaillabel">
@@ -56,7 +61,7 @@ export const Register = () => {
               placeholder="example@example.com"
               className="form__emailinput"
               value={email}
-              onChange={onChange}
+              onChange={onChangeRegister}
             />
             <label htmlFor="yourBirthday" className="form__datelabel">
               Your birthday
@@ -67,7 +72,7 @@ export const Register = () => {
               id="yourBirthday"
               placeholder="Your birthday"
               value={yourBirthday}
-              onChange={onChange}
+              onChange={onChangeRegister}
             />
           </div>
 
@@ -81,7 +86,7 @@ export const Register = () => {
               className="form__userinput"
               placeholder="Your user name"
               value={userName}
-              onChange={onChange}
+              onChange={onChangeRegister}
             />
             <label htmlFor="age" className="form__agelabel">
               Age
@@ -94,7 +99,7 @@ export const Register = () => {
               min={18}
               max={100}
               value={age}
-              onChange={onChange}
+              onChange={onChangeRegister}
             />
             <label htmlFor="yourDirection" className="form__directionlabel">
               Your direction
@@ -105,7 +110,7 @@ export const Register = () => {
               id="yourDirection"
               placeholder="Your direction"
               value={yourDirection}
-              onChange={onChange}
+              onChange={onChangeRegister}
             />
             <label htmlFor="password" className="form__passwordlabel">
               Your password
@@ -116,7 +121,7 @@ export const Register = () => {
               id="password"
               placeholder="**********"
               value={password}
-              onChange={onChange}
+              onChange={onChangeRegister}
             />
           </div>
         </div>

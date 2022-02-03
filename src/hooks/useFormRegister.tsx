@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useState } from "react";
 
-export const useForm = () => {
+export const useFormRegister = () => {
   const registerValue = {
     firstName: "",
     lastName: "",
@@ -14,19 +14,19 @@ export const useForm = () => {
 
   const [dataRegister, setDataRegister] = useState(registerValue);
 
-  const onChange = (evt: ChangeEvent<HTMLInputElement>) => {
+  const onChangeRegister = (evt: ChangeEvent<HTMLInputElement>) => {
     setDataRegister({
       ...dataRegister,
       [evt.target.id]: evt.target.value,
     });
   };
 
-  const onSubmit = (evt: React.SyntheticEvent) => {
+  const onSubmitRegister = (evt: React.SyntheticEvent) => {
     evt.preventDefault();
   };
   return {
     dataRegister,
-    onChange,
-    onSubmit,
+    onChangeRegister,
+    onSubmitRegister,
   };
 };
