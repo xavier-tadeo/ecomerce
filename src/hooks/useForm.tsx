@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 
 export const useForm = () => {
   const registerValue = {
@@ -8,7 +8,6 @@ export const useForm = () => {
     email: "",
     yourBirthday: "",
     age: "",
-    avatar: "",
     yourDirection: "",
     password: "",
   };
@@ -18,8 +17,7 @@ export const useForm = () => {
   const onChange = (evt: ChangeEvent<HTMLInputElement>) => {
     setDataRegister({
       ...dataRegister,
-      [evt.target.id]:
-        evt.target.type === "file" ? evt.target.files : evt.target.value,
+      [evt.target.id]: evt.target.value,
     });
   };
 
