@@ -107,28 +107,20 @@ export const Register = () => {
               value={yourDirection}
               onChange={onChange}
             />
-            <label htmlFor="avatar" className="form__avatarlabel">
-              Avatar
+            <label htmlFor="password" className="form__passwordlabel">
+              Your password
             </label>
             <input
-              type="file"
-              className="form__avatarinput"
-              id="avatar"
+              type="password"
+              className="form__passwordinput"
+              id="password"
+              placeholder="**********"
+              value={password}
               onChange={onChange}
             />
           </div>
         </div>
-        <label htmlFor="password" className="form__passwordlabel">
-          Your password
-        </label>
-        <input
-          type="password"
-          className="form__passwordinput"
-          id="password"
-          placeholder="**********"
-          value={password}
-          onChange={onChange}
-        />
+
         <div className="form__container-button">
           <button className="form__button">Create User</button>
         </div>
